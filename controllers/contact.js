@@ -21,7 +21,7 @@ contactRouter.post('/', async (request, response) => {
       await transporter.sendMail({
           from:process.env.AM_EMAIL,// sender address
           to: process.env.AM_EMAIL, // list of receivers
-          subject: "Nuevo contacto", // Subject line
+          subject: "New contact from Portfolio", // Subject line
           text: ``,
           html: `<p class="font-coco">Nombre: ${fullname}</p> 
                 <p class="font-bold">e-mail: ${email}</p> 
